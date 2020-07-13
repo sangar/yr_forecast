@@ -19,4 +19,9 @@ class YrForecastTest < Minitest::Test
     forecast = YrForecast.for(latitude: 59.9128627, longitude: 10.7434443)
     assert_equal 14, forecast.count
   end
+
+  def test_get_data_by_other_coords
+    forecast = YrForecast.for(latitude: 69.648405, longitude: 18.959708)
+    assert_equal 14, forecast.count
+  end
 end

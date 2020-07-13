@@ -31,6 +31,8 @@ module YrForecast
       parsed_response = JSON.parse(res.body)
       datas = parsed_response["_embedded"]["nearestLocations"]
 
+      return [] if datas.count == 0
+
       datas.each {|data| data["sorttime"] = Time.parse(data["time"]).to_datetime }
       datas.sort! {|a, b| b["sorttime"] <=> a["sorttime"] }
       watertemperature = datas[0]
