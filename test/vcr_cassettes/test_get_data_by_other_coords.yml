@@ -1,0 +1,1539 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.yr.no/api/v0/locations/search?accuracy=1000&language=en&lat=69.648405&lon=18.959708
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.yr.no
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=23227
+      Expires:
+      - Tue, 19 Jan 2021 21:51:27 GMT
+      Date:
+      - Tue, 19 Jan 2021 15:24:20 GMT
+      Content-Length:
+      - '15274'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ew0KICAidG90YWxSZXN1bHRzIjogNiwNCiAgIl9saW5rcyI6IHsNCiAgICAic2VsZiI6IHsNCiAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zIg0KICAgIH0sDQogICAgInBhZ2UiOiB7DQogICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9uc3s/cGFnZX0iLA0KICAgICAgInRlbXBsYXRlZCI6IHRydWUNCiAgICB9LA0KICAgICJzZWFyY2giOiB7DQogICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy9zZWFyY2h7P3F9IiwNCiAgICAgICJ0ZW1wbGF0ZWQiOiB0cnVlDQogICAgfSwNCiAgICAibG9jYXRpb24iOiBbDQogICAgICB7DQogICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5Ig0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1Ig0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQyIg0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yMzg5NTA4Ig0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQ1Ig0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg4Ig0KICAgICAgfQ0KICAgIF0NCiAgfSwNCiAgIl9lbWJlZGRlZCI6IHsNCiAgICAibG9jYXRpb24iOiBbDQogICAgICB7DQogICAgICAgICJjYXRlZ29yeSI6IHsNCiAgICAgICAgICAiaWQiOiAiQ0IwOSIsDQogICAgICAgICAgIm5hbWUiOiAiQ2l0eSDigJMgbGFyZ2UgdG93biINCiAgICAgICAgfSwNCiAgICAgICAgImlkIjogIjEtMzA1NDA5IiwNCiAgICAgICAgIm5hbWUiOiAiVHJvbXPDuCIsDQogICAgICAgICJwb3NpdGlvbiI6IHsNCiAgICAgICAgICAibGF0IjogNjkuNjU0NTUsDQogICAgICAgICAgImxvbiI6IDE4Ljk2MzY2DQogICAgICAgIH0sDQogICAgICAgICJlbGV2YXRpb24iOiA1LA0KICAgICAgICAiY29hc3RhbFBvaW50Ijogew0KICAgICAgICAgICJsYXQiOiA2OS42MzA1OSwNCiAgICAgICAgICAibG9uIjogMTguOTQzNTMNCiAgICAgICAgfSwNCiAgICAgICAgInRpbWVab25lIjogIkV1cm9wZS9Pc2xvIiwNCiAgICAgICAgInVybFBhdGgiOiAiTm9yd2F5L1Ryb21zIG9nIEZpbm5tYXJrL1Ryb21zw7gvVHJvbXPDuCIsDQogICAgICAgICJjb3VudHJ5Ijogew0KICAgICAgICAgICJpZCI6ICJOTyIsDQogICAgICAgICAgIm5hbWUiOiAiTm9yd2F5Ig0KICAgICAgICB9LA0KICAgICAgICAicmVnaW9uIjogew0KICAgICAgICAgICJpZCI6ICJOTy81NCIsDQogICAgICAgICAgIm5hbWUiOiAiVHJvbXMgb2cgRmlubm1hcmsiDQogICAgICAgIH0sDQogICAgICAgICJzdWJyZWdpb24iOiB7DQogICAgICAgICAgImlkIjogIk5PLzU0LzU0MDEiLA0KICAgICAgICAgICJuYW1lIjogIlRyb21zw7giDQogICAgICAgIH0sDQogICAgICAgICJfbGlua3MiOiB7DQogICAgICAgICAgInNlbGYiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOSINCiAgICAgICAgICB9LA0KICAgICAgICAgICJjZWxlc3RpYWxldmVudHMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9jZWxlc3RpYWxldmVudHMiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiZm9yZWNhc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9mb3JlY2FzdCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJub3ciOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9mb3JlY2FzdC9ub3ciDQogICAgICAgICAgfSwNCiAgICAgICAgICAiY29hc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9mb3JlY2FzdC9jb2FzdCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJ0aWRhbCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5L3RpZGFsIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm1hcGZlYXR1cmUiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9tYXBmZWF0dXJlIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm5vdGlmaWNhdGlvbnMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9ub3RpZmljYXRpb25zIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImV4dHJlbWVmb3JlY2FzdHMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9ub3RpZmljYXRpb25zL2V4dHJlbWUiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiY3VycmVudGhvdXIiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTMwNTQwOS9mb3JlY2FzdC9jdXJyZW50aG91ciINCiAgICAgICAgICB9LA0KICAgICAgICAgICJvYnNlcnZhdGlvbnMiOiBbDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5L29ic2VydmF0aW9ucyINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5L29ic2VydmF0aW9ucy95ZWFyIg0KICAgICAgICAgICAgfSwNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0zMDU0MDkvb2JzZXJ2YXRpb25zL21vbnRoIg0KICAgICAgICAgICAgfQ0KICAgICAgICAgIF0sDQogICAgICAgICAgIndhdGVydGVtcGVyYXR1cmVzIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0zMDU0MDkvbmVhcmVzdHdhdGVydGVtcGVyYXR1cmVzIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImFpcnF1YWxpdHlmb3JlY2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5L2FpcnF1YWxpdHlmb3JlY2FzdCINCiAgICAgICAgICB9DQogICAgICAgIH0NCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJjYXRlZ29yeSI6IHsNCiAgICAgICAgICAiaWQiOiAiRUowMSIsDQogICAgICAgICAgIm5hbWUiOiAiQ2h1cmNoIg0KICAgICAgICB9LA0KICAgICAgICAiaWQiOiAiMS0yODM0Nzg1IiwNCiAgICAgICAgIm5hbWUiOiAiVHJvbXPDuCBkb21raXJrZSIsDQogICAgICAgICJwb3NpdGlvbiI6IHsNCiAgICAgICAgICAibGF0IjogNjkuNjQ4NzYsDQogICAgICAgICAgImxvbiI6IDE4Ljk1NjU5DQogICAgICAgIH0sDQogICAgICAgICJlbGV2YXRpb24iOiA3LA0KICAgICAgICAiY29hc3RhbFBvaW50Ijogew0KICAgICAgICAgICJsYXQiOiA2OS42MzA1OSwNCiAgICAgICAgICAibG9uIjogMTguOTQzNTMNCiAgICAgICAgfSwNCiAgICAgICAgInRpbWVab25lIjogIkV1cm9wZS9Pc2xvIiwNCiAgICAgICAgInVybFBhdGgiOiAiTm9yd2F5L1Ryb21zIG9nIEZpbm5tYXJrL1Ryb21zw7gvVHJvbXPDuCBkb21raXJrZSIsDQogICAgICAgICJjb3VudHJ5Ijogew0KICAgICAgICAgICJpZCI6ICJOTyIsDQogICAgICAgICAgIm5hbWUiOiAiTm9yd2F5Ig0KICAgICAgICB9LA0KICAgICAgICAicmVnaW9uIjogew0KICAgICAgICAgICJpZCI6ICJOTy81NCIsDQogICAgICAgICAgIm5hbWUiOiAiVHJvbXMgb2cgRmlubm1hcmsiDQogICAgICAgIH0sDQogICAgICAgICJzdWJyZWdpb24iOiB7DQogICAgICAgICAgImlkIjogIk5PLzU0LzU0MDEiLA0KICAgICAgICAgICJuYW1lIjogIlRyb21zw7giDQogICAgICAgIH0sDQogICAgICAgICJfbGlua3MiOiB7DQogICAgICAgICAgInNlbGYiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODUiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiY2VsZXN0aWFsZXZlbnRzIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L2NlbGVzdGlhbGV2ZW50cyINCiAgICAgICAgICB9LA0KICAgICAgICAgICJmb3JlY2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4NS9mb3JlY2FzdCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJub3ciOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODUvZm9yZWNhc3Qvbm93Ig0KICAgICAgICAgIH0sDQogICAgICAgICAgImNvYXN0Ijogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L2ZvcmVjYXN0L2NvYXN0Ig0KICAgICAgICAgIH0sDQogICAgICAgICAgInRpZGFsIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L3RpZGFsIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm1hcGZlYXR1cmUiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODUvbWFwZmVhdHVyZSINCiAgICAgICAgICB9LA0KICAgICAgICAgICJub3RpZmljYXRpb25zIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L25vdGlmaWNhdGlvbnMiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiZXh0cmVtZWZvcmVjYXN0cyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4NS9ub3RpZmljYXRpb25zL2V4dHJlbWUiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiY3VycmVudGhvdXIiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODUvZm9yZWNhc3QvY3VycmVudGhvdXIiDQogICAgICAgICAgfSwNCiAgICAgICAgICAib2JzZXJ2YXRpb25zIjogWw0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODUvb2JzZXJ2YXRpb25zIg0KICAgICAgICAgICAgfSwNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L29ic2VydmF0aW9ucy95ZWFyIg0KICAgICAgICAgICAgfSwNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L29ic2VydmF0aW9ucy9tb250aCINCiAgICAgICAgICAgIH0NCiAgICAgICAgICBdLA0KICAgICAgICAgICJ3YXRlcnRlbXBlcmF0dXJlcyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4NS9uZWFyZXN0d2F0ZXJ0ZW1wZXJhdHVyZXMiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiYWlycXVhbGl0eWZvcmVjYXN0Ijogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg1L2FpcnF1YWxpdHlmb3JlY2FzdCINCiAgICAgICAgICB9DQogICAgICAgIH0NCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJjYXRlZ29yeSI6IHsNCiAgICAgICAgICAiaWQiOiAiS0EwMSIsDQogICAgICAgICAgIm5hbWUiOiAiU3F1YXJlIg0KICAgICAgICB9LA0KICAgICAgICAiaWQiOiAiMS0yNzE3OTQyIiwNCiAgICAgICAgIm5hbWUiOiAiUmljaGFyZCBXaXRocyBQbGFzcyIsDQogICAgICAgICJwb3NpdGlvbiI6IHsNCiAgICAgICAgICAibGF0IjogNjkuNjQ4MzIsDQogICAgICAgICAgImxvbiI6IDE4Ljk1OQ0KICAgICAgICB9LA0KICAgICAgICAiZWxldmF0aW9uIjogNSwNCiAgICAgICAgImNvYXN0YWxQb2ludCI6IHsNCiAgICAgICAgICAibGF0IjogNjkuNjMwNTksDQogICAgICAgICAgImxvbiI6IDE4Ljk0MzUzDQogICAgICAgIH0sDQogICAgICAgICJ0aW1lWm9uZSI6ICJFdXJvcGUvT3NsbyIsDQogICAgICAgICJ1cmxQYXRoIjogIk5vcndheS9Ucm9tcyBvZyBGaW5ubWFyay9Ucm9tc8O4L1JpY2hhcmQgV2l0aHMgUGxhc3MiLA0KICAgICAgICAiY291bnRyeSI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8iLA0KICAgICAgICAgICJuYW1lIjogIk5vcndheSINCiAgICAgICAgfSwNCiAgICAgICAgInJlZ2lvbiI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8vNTQiLA0KICAgICAgICAgICJuYW1lIjogIlRyb21zIG9nIEZpbm5tYXJrIg0KICAgICAgICB9LA0KICAgICAgICAic3VicmVnaW9uIjogew0KICAgICAgICAgICJpZCI6ICJOTy81NC81NDAxIiwNCiAgICAgICAgICAibmFtZSI6ICJUcm9tc8O4Ig0KICAgICAgICB9LA0KICAgICAgICAiX2xpbmtzIjogew0KICAgICAgICAgICJzZWxmIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQyIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImNlbGVzdGlhbGV2ZW50cyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi9jZWxlc3RpYWxldmVudHMiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiZm9yZWNhc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI3MTc5NDIvZm9yZWNhc3QiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibm93Ijogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQyL2ZvcmVjYXN0L25vdyINCiAgICAgICAgICB9LA0KICAgICAgICAgICJjb2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi9mb3JlY2FzdC9jb2FzdCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJ0aWRhbCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi90aWRhbCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJtYXBmZWF0dXJlIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQyL21hcGZlYXR1cmUiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibm90aWZpY2F0aW9ucyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi9ub3RpZmljYXRpb25zIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImV4dHJlbWVmb3JlY2FzdHMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI3MTc5NDIvbm90aWZpY2F0aW9ucy9leHRyZW1lIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImN1cnJlbnRob3VyIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQyL2ZvcmVjYXN0L2N1cnJlbnRob3VyIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm9ic2VydmF0aW9ucyI6IFsNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQyL29ic2VydmF0aW9ucyINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi9vYnNlcnZhdGlvbnMveWVhciINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi9vYnNlcnZhdGlvbnMvbW9udGgiDQogICAgICAgICAgICB9DQogICAgICAgICAgXSwNCiAgICAgICAgICAid2F0ZXJ0ZW1wZXJhdHVyZXMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI3MTc5NDIvbmVhcmVzdHdhdGVydGVtcGVyYXR1cmVzIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImFpcnF1YWxpdHlmb3JlY2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0Mi9haXJxdWFsaXR5Zm9yZWNhc3QiDQogICAgICAgICAgfQ0KICAgICAgICB9DQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiY2F0ZWdvcnkiOiB7DQogICAgICAgICAgImlkIjogIktKMTIiLA0KICAgICAgICAgICJuYW1lIjogIkhhcmJvdXIiDQogICAgICAgIH0sDQogICAgICAgICJpZCI6ICIxLTIzODk1MDgiLA0KICAgICAgICAibmFtZSI6ICJQcm9zdG5lc2V0IiwNCiAgICAgICAgInBvc2l0aW9uIjogew0KICAgICAgICAgICJsYXQiOiA2OS42NDgyNSwNCiAgICAgICAgICAibG9uIjogMTguOTYwNjkNCiAgICAgICAgfSwNCiAgICAgICAgImVsZXZhdGlvbiI6IDMsDQogICAgICAgICJjb2FzdGFsUG9pbnQiOiB7DQogICAgICAgICAgImxhdCI6IDY5LjY1ODQzLA0KICAgICAgICAgICJsb24iOiAxOC45ODA3DQogICAgICAgIH0sDQogICAgICAgICJ0aW1lWm9uZSI6ICJFdXJvcGUvT3NsbyIsDQogICAgICAgICJ1cmxQYXRoIjogIk5vcndheS9Ucm9tcyBvZyBGaW5ubWFyay9Ucm9tc8O4L1Byb3N0bmVzZXQiLA0KICAgICAgICAiY291bnRyeSI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8iLA0KICAgICAgICAgICJuYW1lIjogIk5vcndheSINCiAgICAgICAgfSwNCiAgICAgICAgInJlZ2lvbiI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8vNTQiLA0KICAgICAgICAgICJuYW1lIjogIlRyb21zIG9nIEZpbm5tYXJrIg0KICAgICAgICB9LA0KICAgICAgICAic3VicmVnaW9uIjogew0KICAgICAgICAgICJpZCI6ICJOTy81NC81NDAxIiwNCiAgICAgICAgICAibmFtZSI6ICJUcm9tc8O4Ig0KICAgICAgICB9LA0KICAgICAgICAiX2xpbmtzIjogew0KICAgICAgICAgICJzZWxmIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yMzg5NTA4Ig0KICAgICAgICAgIH0sDQogICAgICAgICAgImNlbGVzdGlhbGV2ZW50cyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC9jZWxlc3RpYWxldmVudHMiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiZm9yZWNhc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTIzODk1MDgvZm9yZWNhc3QiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibm93Ijogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yMzg5NTA4L2ZvcmVjYXN0L25vdyINCiAgICAgICAgICB9LA0KICAgICAgICAgICJjb2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC9mb3JlY2FzdC9jb2FzdCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJ0aWRhbCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC90aWRhbCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJtYXBmZWF0dXJlIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yMzg5NTA4L21hcGZlYXR1cmUiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibm90aWZpY2F0aW9ucyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC9ub3RpZmljYXRpb25zIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImV4dHJlbWVmb3JlY2FzdHMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTIzODk1MDgvbm90aWZpY2F0aW9ucy9leHRyZW1lIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImN1cnJlbnRob3VyIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yMzg5NTA4L2ZvcmVjYXN0L2N1cnJlbnRob3VyIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm9ic2VydmF0aW9ucyI6IFsNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yMzg5NTA4L29ic2VydmF0aW9ucyINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC9vYnNlcnZhdGlvbnMveWVhciINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC9vYnNlcnZhdGlvbnMvbW9udGgiDQogICAgICAgICAgICB9DQogICAgICAgICAgXSwNCiAgICAgICAgICAid2F0ZXJ0ZW1wZXJhdHVyZXMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTIzODk1MDgvbmVhcmVzdHdhdGVydGVtcGVyYXR1cmVzIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImFpcnF1YWxpdHlmb3JlY2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjM4OTUwOC9haXJxdWFsaXR5Zm9yZWNhc3QiDQogICAgICAgICAgfQ0KICAgICAgICB9DQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiY2F0ZWdvcnkiOiB7DQogICAgICAgICAgImlkIjogIktBMDEiLA0KICAgICAgICAgICJuYW1lIjogIlNxdWFyZSINCiAgICAgICAgfSwNCiAgICAgICAgImlkIjogIjEtMjcxNzk0NSIsDQogICAgICAgICJuYW1lIjogIlJvYWxkIEFtdW5kc2VucyBQbGFzcyIsDQogICAgICAgICJwb3NpdGlvbiI6IHsNCiAgICAgICAgICAibGF0IjogNjkuNjQ3NiwNCiAgICAgICAgICAibG9uIjogMTguOTU4NzQNCiAgICAgICAgfSwNCiAgICAgICAgImVsZXZhdGlvbiI6IDMsDQogICAgICAgICJjb2FzdGFsUG9pbnQiOiB7DQogICAgICAgICAgImxhdCI6IDY5LjYzMDU5LA0KICAgICAgICAgICJsb24iOiAxOC45NDM1Mw0KICAgICAgICB9LA0KICAgICAgICAidGltZVpvbmUiOiAiRXVyb3BlL09zbG8iLA0KICAgICAgICAidXJsUGF0aCI6ICJOb3J3YXkvVHJvbXMgb2cgRmlubm1hcmsvVHJvbXPDuC9Sb2FsZCBBbXVuZHNlbnMgUGxhc3MiLA0KICAgICAgICAiY291bnRyeSI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8iLA0KICAgICAgICAgICJuYW1lIjogIk5vcndheSINCiAgICAgICAgfSwNCiAgICAgICAgInJlZ2lvbiI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8vNTQiLA0KICAgICAgICAgICJuYW1lIjogIlRyb21zIG9nIEZpbm5tYXJrIg0KICAgICAgICB9LA0KICAgICAgICAic3VicmVnaW9uIjogew0KICAgICAgICAgICJpZCI6ICJOTy81NC81NDAxIiwNCiAgICAgICAgICAibmFtZSI6ICJUcm9tc8O4Ig0KICAgICAgICB9LA0KICAgICAgICAiX2xpbmtzIjogew0KICAgICAgICAgICJzZWxmIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQ1Ig0KICAgICAgICAgIH0sDQogICAgICAgICAgImNlbGVzdGlhbGV2ZW50cyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS9jZWxlc3RpYWxldmVudHMiDQogICAgICAgICAgfSwNCiAgICAgICAgICAiZm9yZWNhc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI3MTc5NDUvZm9yZWNhc3QiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibm93Ijogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQ1L2ZvcmVjYXN0L25vdyINCiAgICAgICAgICB9LA0KICAgICAgICAgICJjb2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS9mb3JlY2FzdC9jb2FzdCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJ0aWRhbCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS90aWRhbCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJtYXBmZWF0dXJlIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQ1L21hcGZlYXR1cmUiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibm90aWZpY2F0aW9ucyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS9ub3RpZmljYXRpb25zIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImV4dHJlbWVmb3JlY2FzdHMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI3MTc5NDUvbm90aWZpY2F0aW9ucy9leHRyZW1lIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImN1cnJlbnRob3VyIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQ1L2ZvcmVjYXN0L2N1cnJlbnRob3VyIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm9ic2VydmF0aW9ucyI6IFsNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yNzE3OTQ1L29ic2VydmF0aW9ucyINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS9vYnNlcnZhdGlvbnMveWVhciINCiAgICAgICAgICAgIH0sDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS9vYnNlcnZhdGlvbnMvbW9udGgiDQogICAgICAgICAgICB9DQogICAgICAgICAgXSwNCiAgICAgICAgICAid2F0ZXJ0ZW1wZXJhdHVyZXMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI3MTc5NDUvbmVhcmVzdHdhdGVydGVtcGVyYXR1cmVzIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImFpcnF1YWxpdHlmb3JlY2FzdCI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjcxNzk0NS9haXJxdWFsaXR5Zm9yZWNhc3QiDQogICAgICAgICAgfQ0KICAgICAgICB9DQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiY2F0ZWdvcnkiOiB7DQogICAgICAgICAgImlkIjogIktKMTIiLA0KICAgICAgICAgICJuYW1lIjogIkhhcmJvdXIiDQogICAgICAgIH0sDQogICAgICAgICJpZCI6ICIxLTI4MzQ3ODgiLA0KICAgICAgICAibmFtZSI6ICJJbmRyZWhhbW5hIiwNCiAgICAgICAgInBvc2l0aW9uIjogew0KICAgICAgICAgICJsYXQiOiA2OS42NTA5MSwNCiAgICAgICAgICAibG9uIjogMTguOTY0NTgNCiAgICAgICAgfSwNCiAgICAgICAgImVsZXZhdGlvbiI6IC0xLA0KICAgICAgICAiY29hc3RhbFBvaW50Ijogew0KICAgICAgICAgICJsYXQiOiA2OS42NTg0MywNCiAgICAgICAgICAibG9uIjogMTguOTgwNw0KICAgICAgICB9LA0KICAgICAgICAidGltZVpvbmUiOiAiRXVyb3BlL09zbG8iLA0KICAgICAgICAidXJsUGF0aCI6ICJOb3J3YXkvVHJvbXMgb2cgRmlubm1hcmsvVHJvbXPDuC9JbmRyZWhhbW5hIiwNCiAgICAgICAgImNvdW50cnkiOiB7DQogICAgICAgICAgImlkIjogIk5PIiwNCiAgICAgICAgICAibmFtZSI6ICJOb3J3YXkiDQogICAgICAgIH0sDQogICAgICAgICJyZWdpb24iOiB7DQogICAgICAgICAgImlkIjogIk5PLzU0IiwNCiAgICAgICAgICAibmFtZSI6ICJUcm9tcyBvZyBGaW5ubWFyayINCiAgICAgICAgfSwNCiAgICAgICAgInN1YnJlZ2lvbiI6IHsNCiAgICAgICAgICAiaWQiOiAiTk8vNTQvNTQwMSIsDQogICAgICAgICAgIm5hbWUiOiAiVHJvbXPDuCINCiAgICAgICAgfSwNCiAgICAgICAgIl9saW5rcyI6IHsNCiAgICAgICAgICAic2VsZiI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4OCINCiAgICAgICAgICB9LA0KICAgICAgICAgICJjZWxlc3RpYWxldmVudHMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvY2VsZXN0aWFsZXZlbnRzIg0KICAgICAgICAgIH0sDQogICAgICAgICAgImZvcmVjYXN0Ijogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg4L2ZvcmVjYXN0Ig0KICAgICAgICAgIH0sDQogICAgICAgICAgIm5vdyI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4OC9mb3JlY2FzdC9ub3ciDQogICAgICAgICAgfSwNCiAgICAgICAgICAiY29hc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvZm9yZWNhc3QvY29hc3QiDQogICAgICAgICAgfSwNCiAgICAgICAgICAidGlkYWwiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvdGlkYWwiDQogICAgICAgICAgfSwNCiAgICAgICAgICAibWFwZmVhdHVyZSI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4OC9tYXBmZWF0dXJlIg0KICAgICAgICAgIH0sDQogICAgICAgICAgIm5vdGlmaWNhdGlvbnMiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvbm90aWZpY2F0aW9ucyINCiAgICAgICAgICB9LA0KICAgICAgICAgICJleHRyZW1lZm9yZWNhc3RzIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg4L25vdGlmaWNhdGlvbnMvZXh0cmVtZSINCiAgICAgICAgICB9LA0KICAgICAgICAgICJjdXJyZW50aG91ciI6IHsNCiAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4OC9mb3JlY2FzdC9jdXJyZW50aG91ciINCiAgICAgICAgICB9LA0KICAgICAgICAgICJvYnNlcnZhdGlvbnMiOiBbDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICJocmVmIjogIi9hcGkvdjAvbG9jYXRpb25zLzEtMjgzNDc4OC9vYnNlcnZhdGlvbnMiDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvb2JzZXJ2YXRpb25zL3llYXIiDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvb2JzZXJ2YXRpb25zL21vbnRoIg0KICAgICAgICAgICAgfQ0KICAgICAgICAgIF0sDQogICAgICAgICAgIndhdGVydGVtcGVyYXR1cmVzIjogew0KICAgICAgICAgICAgImhyZWYiOiAiL2FwaS92MC9sb2NhdGlvbnMvMS0yODM0Nzg4L25lYXJlc3R3YXRlcnRlbXBlcmF0dXJlcyINCiAgICAgICAgICB9LA0KICAgICAgICAgICJhaXJxdWFsaXR5Zm9yZWNhc3QiOiB7DQogICAgICAgICAgICAiaHJlZiI6ICIvYXBpL3YwL2xvY2F0aW9ucy8xLTI4MzQ3ODgvYWlycXVhbGl0eWZvcmVjYXN0Ig0KICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgICAgfQ0KICAgIF0NCiAgfQ0KfQ==
+  recorded_at: Tue, 19 Jan 2021 15:24:20 GMT
+- request:
+    method: get
+    uri: https://www.yr.no/api/v0/locations/1-305409/forecast
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.yr.no
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=337
+      Expires:
+      - Tue, 19 Jan 2021 15:29:57 GMT
+      Date:
+      - Tue, 19 Jan 2021 15:24:20 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=86400
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"created\": \"2021-01-19T15:53:43+01:00\",\r\n  \"update\":
+        \"2021-01-19T16:53:43+01:00\",\r\n  \"dayIntervals\": [\r\n    {\r\n      \"start\":
+        \"2021-01-19T01:00:00+01:00\",\r\n      \"end\": \"2021-01-20T01:00:00+01:00\",\r\n
+        \     \"twentyFourHourSymbol\": \"clearsky_night\",\r\n      \"twelveHourSymbols\":
+        [\r\n        null,\r\n        \"clearsky_night\"\r\n      ],\r\n      \"sixHourSymbols\":
+        [\r\n        null,\r\n        null,\r\n        \"clearsky_night\",\r\n        \"clearsky_night\"\r\n
+        \     ],\r\n      \"precipitation\": {\r\n        \"value\": 0.0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"min\": -5.8,\r\n        \"max\":
+        -4.8\r\n      },\r\n      \"wind\": {\r\n        \"min\": 0.7,\r\n        \"max\":
+        6.0,\r\n        \"maxGust\": 9.4\r\n      }\r\n    },\r\n    {\r\n      \"start\":
+        \"2021-01-20T01:00:00+01:00\",\r\n      \"end\": \"2021-01-21T01:00:00+01:00\",\r\n
+        \     \"twentyFourHourSymbol\": \"cloudy\",\r\n      \"twelveHourSymbols\":
+        [\r\n        \"partlycloudy_day\",\r\n        \"cloudy\"\r\n      ],\r\n      \"sixHourSymbols\":
+        [\r\n        \"fair_night\",\r\n        \"partlycloudy_day\",\r\n        \"cloudy\",\r\n
+        \       \"cloudy\"\r\n      ],\r\n      \"precipitation\": {\r\n        \"value\":
+        0.0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"min\": -7.2,\r\n        \"max\": -5.9\r\n      },\r\n      \"wind\":
+        {\r\n        \"min\": 4.7,\r\n        \"max\": 12.6,\r\n        \"maxGust\":
+        18.5\r\n      }\r\n    },\r\n    {\r\n      \"start\": \"2021-01-21T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-22T01:00:00+01:00\",\r\n      \"twentyFourHourSymbol\":
+        \"partlycloudy_day\",\r\n      \"twelveHourSymbols\": [\r\n        \"partlycloudy_day\",\r\n
+        \       \"cloudy\"\r\n      ],\r\n      \"sixHourSymbols\": [\r\n        \"partlycloudy_night\",\r\n
+        \       \"partlycloudy_day\",\r\n        \"partlycloudy_day\",\r\n        \"cloudy\"\r\n
+        \     ],\r\n      \"precipitation\": {\r\n        \"value\": 0.0,\r\n        \"probability\":
+        10\r\n      },\r\n      \"temperature\": {\r\n        \"min\": -8.7,\r\n        \"max\":
+        -3.8\r\n      },\r\n      \"wind\": {\r\n        \"min\": 0.6,\r\n        \"max\":
+        15.5,\r\n        \"maxGust\": 20.8\r\n      }\r\n    },\r\n    {\r\n      \"start\":
+        \"2021-01-22T01:00:00+01:00\",\r\n      \"end\": \"2021-01-23T01:00:00+01:00\",\r\n
+        \     \"twentyFourHourSymbol\": \"cloudy\",\r\n      \"twelveHourSymbols\":
+        [\r\n        \"cloudy\",\r\n        \"cloudy\"\r\n      ],\r\n      \"sixHourSymbols\":
+        [\r\n        \"cloudy\",\r\n        \"cloudy\",\r\n        \"cloudy\",\r\n
+        \       \"cloudy\"\r\n      ],\r\n      \"precipitation\": {\r\n        \"value\":
+        0.0,\r\n        \"probability\": 30\r\n      },\r\n      \"temperature\":
+        {\r\n        \"min\": -5.2,\r\n        \"max\": -3.5\r\n      },\r\n      \"wind\":
+        {\r\n        \"min\": 7.1,\r\n        \"max\": 8.8\r\n      }\r\n    },\r\n
+        \   {\r\n      \"start\": \"2021-01-23T01:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-24T01:00:00+01:00\",\r\n      \"twentyFourHourSymbol\": \"cloudy\",\r\n
+        \     \"twelveHourSymbols\": [\r\n        \"cloudy\",\r\n        \"partlycloudy_day\"\r\n
+        \     ],\r\n      \"sixHourSymbols\": [\r\n        \"cloudy\",\r\n        \"cloudy\",\r\n
+        \       \"cloudy\",\r\n        \"partlycloudy_night\"\r\n      ],\r\n      \"precipitation\":
+        {\r\n        \"value\": 0.0,\r\n        \"probability\": 20\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"min\": -6.5,\r\n        \"max\": -4.7\r\n
+        \     },\r\n      \"wind\": {\r\n        \"min\": 4.6,\r\n        \"max\":
+        5.4\r\n      }\r\n    },\r\n    {\r\n      \"start\": \"2021-01-24T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-25T01:00:00+01:00\",\r\n      \"twentyFourHourSymbol\":
+        \"partlycloudy_day\",\r\n      \"twelveHourSymbols\": [\r\n        \"partlycloudy_day\",\r\n
+        \       \"partlycloudy_day\"\r\n      ],\r\n      \"sixHourSymbols\": [\r\n
+        \       \"partlycloudy_night\",\r\n        \"partlycloudy_day\",\r\n        \"partlycloudy_day\",\r\n
+        \       \"partlycloudy_night\"\r\n      ],\r\n      \"precipitation\": {\r\n
+        \       \"value\": 0.0,\r\n        \"probability\": 10\r\n      },\r\n      \"temperature\":
+        {\r\n        \"min\": -6.8,\r\n        \"max\": -5.3\r\n      },\r\n      \"wind\":
+        {\r\n        \"min\": 4.1,\r\n        \"max\": 4.4\r\n      }\r\n    },\r\n
+        \   {\r\n      \"start\": \"2021-01-25T01:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-26T01:00:00+01:00\",\r\n      \"twentyFourHourSymbol\": \"partlycloudy_day\",\r\n
+        \     \"twelveHourSymbols\": [\r\n        \"partlycloudy_day\",\r\n        \"partlycloudy_day\"\r\n
+        \     ],\r\n      \"sixHourSymbols\": [\r\n        \"partlycloudy_night\",\r\n
+        \       \"partlycloudy_day\",\r\n        \"partlycloudy_day\",\r\n        \"partlycloudy_night\"\r\n
+        \     ],\r\n      \"precipitation\": {\r\n        \"value\": 0.0,\r\n        \"probability\":
+        10\r\n      },\r\n      \"temperature\": {\r\n        \"min\": -6.8,\r\n        \"max\":
+        -5.5\r\n      },\r\n      \"wind\": {\r\n        \"min\": 3.3,\r\n        \"max\":
+        3.5\r\n      }\r\n    },\r\n    {\r\n      \"start\": \"2021-01-26T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-27T01:00:00+01:00\",\r\n      \"twentyFourHourSymbol\":
+        \"cloudy\",\r\n      \"twelveHourSymbols\": [\r\n        \"cloudy\",\r\n        \"cloudy\"\r\n
+        \     ],\r\n      \"sixHourSymbols\": [\r\n        \"cloudy\",\r\n        \"cloudy\",\r\n
+        \       \"cloudy\",\r\n        \"cloudy\"\r\n      ],\r\n      \"precipitation\":
+        {\r\n        \"value\": 0.0,\r\n        \"probability\": 10\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"min\": -6.6,\r\n        \"max\": -5.1\r\n
+        \     },\r\n      \"wind\": {\r\n        \"min\": 2.8,\r\n        \"max\":
+        3.6\r\n      }\r\n    },\r\n    {\r\n      \"start\": \"2021-01-27T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-28T01:00:00+01:00\",\r\n      \"twentyFourHourSymbol\":
+        \"cloudy\",\r\n      \"twelveHourSymbols\": [\r\n        \"partlycloudy_day\",\r\n
+        \       \"cloudy\"\r\n      ],\r\n      \"sixHourSymbols\": [\r\n        \"partlycloudy_night\",\r\n
+        \       \"partlycloudy_day\",\r\n        \"cloudy\",\r\n        \"cloudy\"\r\n
+        \     ],\r\n      \"precipitation\": {\r\n        \"value\": 0.0,\r\n        \"probability\":
+        10\r\n      },\r\n      \"temperature\": {\r\n        \"min\": -7.3,\r\n        \"max\":
+        -4.8\r\n      },\r\n      \"wind\": {\r\n        \"min\": 3.0,\r\n        \"max\":
+        3.4\r\n      }\r\n    }\r\n  ],\r\n  \"shortIntervals\": [\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\": \"clearsky_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.1\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 119,\r\n        \"gust\": 4.4,\r\n
+        \       \"speed\": 3.2\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -10.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 0,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 59.6\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.2\r\n      },\r\n      \"start\": \"2021-01-19T17:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-19T18:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\": \"clearsky_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.4\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 102,\r\n        \"gust\": 4.8,\r\n
+        \       \"speed\": 3.2\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -10.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 1,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 59.6\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.4\r\n      },\r\n      \"start\": \"2021-01-19T18:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-19T19:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\": \"clearsky_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.5\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 87,\r\n        \"gust\": 4.9,\r\n
+        \       \"speed\": 2.9\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -10.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 0,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 57.0\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.1\r\n      },\r\n      \"start\": \"2021-01-19T19:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-19T20:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\": \"fair_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.8\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 27,\r\n        \"gust\": 4.6,\r\n
+        \       \"speed\": 0.7\r\n      },\r\n      \"feelsLike\": {},\r\n      \"pressure\":
+        {\r\n        \"value\": 1011\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 0,\r\n        \"high\":
+        1,\r\n        \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 81.3\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -8.8\r\n      },\r\n      \"start\":
+        \"2021-01-19T20:00:00+01:00\",\r\n      \"end\": \"2021-01-19T21:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        1,\r\n        \"clouds\": 0,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"clearsky_night\",\r\n        \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\":
+        \"fair_night\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.8\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        100,\r\n        \"gust\": 4.1,\r\n        \"speed\": 2.6\r\n      },\r\n      \"feelsLike\":
+        {\r\n        \"value\": -10.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1011\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 3,\r\n        \"high\": 3,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 61.1\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.5\r\n      },\r\n      \"start\": \"2021-01-19T21:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-19T22:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\": \"fair_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.8\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 123,\r\n        \"gust\": 6.4,\r\n
+        \       \"speed\": 4.0\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 3,\r\n        \"high\": 3,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 59.4\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.8\r\n      },\r\n      \"start\": \"2021-01-19T22:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-19T23:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\": \"fair_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.6\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 122,\r\n        \"gust\": 8.9,\r\n
+        \       \"speed\": 5.6\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 1,\r\n        \"high\": 1,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 59.2\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.7\r\n      },\r\n      \"start\": \"2021-01-19T23:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T00:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"fair_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.5\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 127,\r\n        \"gust\": 9.4,\r\n
+        \       \"speed\": 6.0\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 1,\r\n        \"high\": 2,\r\n
+        \       \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 58.8\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.6\r\n      },\r\n      \"start\": \"2021-01-20T00:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 1,\r\n        \"clouds\":
+        0,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"clearsky_night\",\r\n
+        \       \"next6Hours\": \"fair_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.6\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 127,\r\n        \"gust\": 9.6,\r\n
+        \       \"speed\": 6.1\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -13.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 3,\r\n        \"high\": 2,\r\n
+        \       \"middle\": 1,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 57.1\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.2\r\n      },\r\n      \"start\": \"2021-01-20T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T02:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"fair_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n      },\r\n
+        \     \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n
+        \       \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.9\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 130,\r\n        \"gust\": 10.5,\r\n
+        \       \"speed\": 6.9\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -13.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 11,\r\n        \"high\": 8,\r\n
+        \       \"middle\": 2,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 55.1\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.8\r\n      },\r\n      \"start\": \"2021-01-20T02:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T03:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"fair_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n      },\r\n
+        \     \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n
+        \       \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.1\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 127,\r\n        \"gust\": 10.5,\r\n
+        \       \"speed\": 6.5\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -14.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 20,\r\n        \"high\": 15,\r\n
+        \       \"middle\": 6,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 53.9\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.4\r\n      },\r\n      \"start\": \"2021-01-20T03:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T04:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.2\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 133,\r\n        \"gust\": 13.2,\r\n
+        \       \"speed\": 9.1\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -15.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 21,\r\n        \"high\": 11,\r\n
+        \       \"middle\": 11,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 53.2\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.6\r\n      },\r\n      \"start\": \"2021-01-20T04:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T05:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.3\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 132,\r\n        \"gust\": 16.1,\r\n
+        \       \"speed\": 11.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 23,\r\n        \"high\": 5,\r\n
+        \       \"middle\": 18,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 54.9\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.3\r\n      },\r\n      \"start\": \"2021-01-20T05:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T06:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.4\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 133,\r\n        \"gust\": 16.9,\r\n
+        \       \"speed\": 12.1\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 20,\r\n        \"high\": 1,\r\n
+        \       \"middle\": 18,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 53.9\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.6\r\n      },\r\n      \"start\": \"2021-01-20T06:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T07:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n
+        \     \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n
+        \       \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.5\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 134,\r\n        \"gust\": 17.6,\r\n
+        \       \"speed\": 12.6\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -17.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 24,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 23,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 53.8\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.8\r\n      },\r\n      \"start\": \"2021-01-20T07:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T08:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n
+        \       \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.6\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 135,\r\n        \"gust\": 18.3,\r\n
+        \       \"speed\": 13.2\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -17.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 35,\r\n        \"high\": 4,\r\n
+        \       \"middle\": 32,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 51.9\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -15.2\r\n      },\r\n      \"start\": \"2021-01-20T08:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T09:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.6\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 135,\r\n        \"gust\":
+        18.9,\r\n        \"speed\": 13.6\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -17.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 59,\r\n        \"high\": 21,\r\n
+        \       \"middle\": 49,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 51.8\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -15.3\r\n      },\r\n      \"start\": \"2021-01-20T09:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T10:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.3\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 135,\r\n        \"gust\":
+        19.0,\r\n        \"speed\": 13.2\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -17.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 88,\r\n        \"high\": 59,\r\n
+        \       \"middle\": 71,\r\n        \"low\": 2,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 52.9\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.8\r\n      },\r\n      \"start\": \"2021-01-20T10:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T11:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.2\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 133,\r\n        \"gust\":
+        18.4,\r\n        \"speed\": 12.6\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1013\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 94,\r\n        \"high\": 65,\r\n
+        \       \"middle\": 83,\r\n        \"low\": 5,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 55.0\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.2\r\n      },\r\n      \"start\": \"2021-01-20T11:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T12:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -5.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 133,\r\n        \"gust\":
+        18.2,\r\n        \"speed\": 12.6\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 94,\r\n        \"high\": 46,\r\n
+        \       \"middle\": 88,\r\n        \"low\": 8,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 55.7\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.8\r\n      },\r\n      \"start\": \"2021-01-20T12:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.0\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 135,\r\n        \"gust\":
+        18.5,\r\n        \"speed\": 12.6\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 94,\r\n        \"high\": 51,\r\n
+        \       \"middle\": 88,\r\n        \"low\": 8,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 53.6\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.3\r\n      },\r\n      \"start\": \"2021-01-20T13:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T14:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.0\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 135,\r\n        \"gust\":
+        18.2,\r\n        \"speed\": 11.4\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 95,\r\n        \"high\": 51,\r\n
+        \       \"middle\": 88,\r\n        \"low\": 8,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 55.7\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.8\r\n      },\r\n      \"start\": \"2021-01-20T14:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T15:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -5.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 130,\r\n        \"gust\":
+        16.8,\r\n        \"speed\": 7.3\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -14.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1013\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 96,\r\n        \"high\": 46,\r\n
+        \       \"middle\": 92,\r\n        \"low\": 11,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 58.1\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -13.3\r\n      },\r\n      \"start\":
+        \"2021-01-20T15:00:00+01:00\",\r\n      \"end\": \"2021-01-20T16:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n
+        \       \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 0,\r\n        \"probability\": 0\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.2\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 111,\r\n        \"gust\": 11.1,\r\n        \"speed\":
+        4.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -12.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1013\r\n      },\r\n
+        \     \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\":
+        {\r\n        \"value\": 98,\r\n        \"high\": 48,\r\n        \"middle\":
+        95,\r\n        \"low\": 19,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\":
+        {\r\n        \"value\": 61.8\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\":
+        -12.8\r\n      },\r\n      \"start\": \"2021-01-20T16:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-20T17:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.3\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 102,\r\n        \"gust\":
+        6.7,\r\n        \"speed\": 2.9\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1013\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 99,\r\n        \"high\": 47,\r\n
+        \       \"middle\": 97,\r\n        \"low\": 26,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 61.4\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -12.9\r\n      },\r\n      \"start\":
+        \"2021-01-20T17:00:00+01:00\",\r\n      \"end\": \"2021-01-20T18:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n
+        \       \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 0,\r\n        \"probability\": 0\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.1\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 136,\r\n        \"gust\": 4.6,\r\n        \"speed\":
+        2.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -10.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1013\r\n      },\r\n
+        \     \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\":
+        {\r\n        \"value\": 100,\r\n        \"high\": 58,\r\n        \"middle\":
+        98,\r\n        \"low\": 26,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\":
+        {\r\n        \"value\": 58.5\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\":
+        -13.3\r\n      },\r\n      \"start\": \"2021-01-20T18:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-20T19:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -5.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 122,\r\n        \"gust\":
+        7.5,\r\n        \"speed\": 4.7\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1013\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 100,\r\n        \"high\": 73,\r\n
+        \       \"middle\": 99,\r\n        \"low\": 25,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 57.4\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -13.4\r\n      },\r\n      \"start\":
+        \"2021-01-20T19:00:00+01:00\",\r\n      \"end\": \"2021-01-20T20:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n
+        \       \"next12Hours\": \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 0,\r\n        \"probability\": 0\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.0\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 126,\r\n        \"gust\": 8.7,\r\n        \"speed\":
+        5.5\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -13.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1012\r\n      },\r\n
+        \     \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\":
+        {\r\n        \"value\": 100,\r\n        \"high\": 82,\r\n        \"middle\":
+        97,\r\n        \"low\": 24,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\":
+        {\r\n        \"value\": 57.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\":
+        -13.5\r\n      },\r\n      \"start\": \"2021-01-20T20:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-20T21:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -6.4\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        138,\r\n        \"gust\": 12.1,\r\n        \"speed\": 7.8\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -15.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n
+        \       \"high\": 94,\r\n        \"middle\": 95,\r\n        \"low\": 22,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        58.5\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -13.6\r\n
+        \     },\r\n      \"start\": \"2021-01-20T21:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-20T22:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -6.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        138,\r\n        \"gust\": 15.0,\r\n        \"speed\": 9.7\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -16.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n
+        \       \"high\": 95,\r\n        \"middle\": 93,\r\n        \"low\": 16,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        58.9\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.0\r\n
+        \     },\r\n      \"start\": \"2021-01-20T22:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-20T23:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -7.0\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        135,\r\n        \"gust\": 14.6,\r\n        \"speed\": 8.9\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -16.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n
+        \       \"high\": 94,\r\n        \"middle\": 92,\r\n        \"low\": 11,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        58.7\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.1\r\n
+        \     },\r\n      \"start\": \"2021-01-20T23:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T00:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -7.1\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        126,\r\n        \"gust\": 13.3,\r\n        \"speed\": 6.4\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -15.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1012\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n
+        \       \"high\": 91,\r\n        \"middle\": 94,\r\n        \"low\": 10,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        56.9\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.6\r\n
+        \     },\r\n      \"start\": \"2021-01-21T00:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\": 2,\r\n
+        \       \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -7.2\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 116,\r\n        \"gust\": 9.6,\r\n
+        \       \"speed\": 5.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -14.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1012\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 97,\r\n        \"high\": 67,\r\n
+        \       \"middle\": 89,\r\n        \"low\": 11,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 56.5\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -14.9\r\n      },\r\n      \"start\":
+        \"2021-01-21T01:00:00+01:00\",\r\n      \"end\": \"2021-01-21T02:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"partlycloudy_night\",\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n
+        \       \"next12Hours\": \"partlycloudy_night\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 0,\r\n        \"probability\": 0\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -7.4\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 66,\r\n        \"gust\": 8.7,\r\n        \"speed\":
+        3.6\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -13.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1012\r\n      },\r\n
+        \     \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\":
+        {\r\n        \"value\": 81,\r\n        \"high\": 29,\r\n        \"middle\":
+        72,\r\n        \"low\": 7,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\":
+        {\r\n        \"value\": 58.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\":
+        -14.6\r\n      },\r\n      \"start\": \"2021-01-21T02:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T03:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\": 2,\r\n
+        \       \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -7.9\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 16,\r\n        \"gust\": 5.9,\r\n
+        \       \"speed\": 1.5\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1012\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 72,\r\n        \"high\": 27,\r\n
+        \       \"middle\": 61,\r\n        \"low\": 4,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 72.0\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.5\r\n      },\r\n      \"start\": \"2021-01-21T03:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T04:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n
+        \       \"next6Hours\": \"partlycloudy_night\",\r\n        \"next12Hours\":
+        \"partlycloudy_night\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -8.3\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        351,\r\n        \"gust\": 4.0,\r\n        \"speed\": 2.5\r\n      },\r\n      \"feelsLike\":
+        {\r\n        \"value\": -13.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1011\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 74,\r\n        \"high\": 45,\r\n
+        \       \"middle\": 51,\r\n        \"low\": 3,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 76.3\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.1\r\n      },\r\n      \"start\": \"2021-01-21T04:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T05:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n
+        \       \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -8.5\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        89,\r\n        \"gust\": 4.6,\r\n        \"speed\": 3.0\r\n      },\r\n      \"feelsLike\":
+        {\r\n        \"value\": -14.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1011\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 75,\r\n        \"high\": 56,\r\n
+        \       \"middle\": 44,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 70.2\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.3\r\n      },\r\n      \"start\": \"2021-01-21T05:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T06:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n
+        \       \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -8.7\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        58,\r\n        \"gust\": 4.2,\r\n        \"speed\": 1.3\r\n      },\r\n      \"feelsLike\":
+        {},\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n      },\r\n      \"uvIndex\":
+        {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        80,\r\n        \"high\": 67,\r\n        \"middle\": 41,\r\n        \"low\":
+        1,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        64.8\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.6\r\n
+        \     },\r\n      \"start\": \"2021-01-21T06:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T07:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\": 2,\r\n
+        \       \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -8.3\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 132,\r\n        \"gust\": 4.9,\r\n
+        \       \"speed\": 0.6\r\n      },\r\n      \"feelsLike\": {},\r\n      \"pressure\":
+        {\r\n        \"value\": 1010\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 80,\r\n        \"high\":
+        67,\r\n        \"middle\": 42,\r\n        \"low\": 1,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 66.9\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -13.8\r\n      },\r\n      \"start\":
+        \"2021-01-21T07:00:00+01:00\",\r\n      \"end\": \"2021-01-21T08:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"partlycloudy_night\",\r\n        \"next6Hours\": \"partlycloudy_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -8.0\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 36,\r\n        \"gust\": 4.1,\r\n
+        \       \"speed\": 1.6\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 70,\r\n        \"high\": 50,\r\n
+        \       \"middle\": 41,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 77.1\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -11.7\r\n      },\r\n      \"start\": \"2021-01-21T08:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T09:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -8.0\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        79,\r\n        \"gust\": 4.7,\r\n        \"speed\": 2.3\r\n      },\r\n      \"feelsLike\":
+        {\r\n        \"value\": -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1010\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 49,\r\n        \"high\": 19,\r\n
+        \       \"middle\": 37,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 71.3\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.7\r\n      },\r\n      \"start\": \"2021-01-21T09:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T10:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"fair_day\",\r\n        \"next6Hours\": \"partlycloudy_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -8.2\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 71,\r\n        \"gust\": 5.1,\r\n
+        \       \"speed\": 3.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -14.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 35,\r\n        \"high\": 3,\r\n
+        \       \"middle\": 33,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 66.4\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.8\r\n      },\r\n      \"start\": \"2021-01-21T10:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T11:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 2,\r\n        \"clouds\":
+        1,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"fair_day\",\r\n        \"next6Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -8.1\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 73,\r\n        \"gust\": 5.3,\r\n
+        \       \"speed\": 1.9\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 33,\r\n        \"high\": 1,\r\n
+        \       \"middle\": 31,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 67.6\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.4\r\n      },\r\n      \"start\": \"2021-01-21T11:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T12:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"partlycloudy_day\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -8.1\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        112,\r\n        \"gust\": 7.0,\r\n        \"speed\": 4.4\r\n      },\r\n      \"feelsLike\":
+        {\r\n        \"value\": -15.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1009\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 38,\r\n        \"high\": 1,\r\n
+        \       \"middle\": 36,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 65.2\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.9\r\n      },\r\n      \"start\": \"2021-01-21T12:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n
+        \       \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -7.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\": 351,\r\n        \"gust\":
+        7.8,\r\n        \"speed\": 3.0\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -13.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1009\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 43,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 42,\r\n        \"low\": 3,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 74.7\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.0\r\n      },\r\n      \"start\": \"2021-01-21T13:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T14:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -7.5\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 30,\r\n        \"gust\": 5.5,\r\n
+        \       \"speed\": 2.7\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1008\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 49,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 47,\r\n        \"low\": 4,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 72.6\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -12.0\r\n      },\r\n      \"start\": \"2021-01-21T14:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T15:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -7.0\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 121,\r\n        \"gust\": 12.3,\r\n
+        \       \"speed\": 7.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -15.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1007\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 61,\r\n        \"high\": 0,\r\n
+        \       \"middle\": 58,\r\n        \"low\": 7,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 58.5\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -14.2\r\n      },\r\n      \"start\": \"2021-01-21T15:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-21T16:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next1Hour\": \"partlycloudy_night\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.9\r\n      },\r\n
+        \     \"wind\": {\r\n        \"direction\": 129,\r\n        \"gust\": 13.1,\r\n
+        \       \"speed\": 8.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -15.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1007\r\n
+        \     },\r\n      \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 72,\r\n        \"high\": 12,\r\n
+        \       \"middle\": 67,\r\n        \"low\": 11,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 59.2\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -14.0\r\n      },\r\n      \"start\":
+        \"2021-01-21T16:00:00+01:00\",\r\n      \"end\": \"2021-01-21T17:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"partlycloudy_night\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -7.1\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        131,\r\n        \"gust\": 17.3,\r\n        \"speed\": 11.5\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -17.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1006\r\n      },\r\n      \"uvIndex\": {\r\n        \"value\":
+        0.0\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 80,\r\n        \"high\":
+        23,\r\n        \"middle\": 74,\r\n        \"low\": 15,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 58.9\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -14.2\r\n      },\r\n      \"start\":
+        \"2021-01-21T17:00:00+01:00\",\r\n      \"end\": \"2021-01-21T18:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 0,\r\n        \"probability\": 0\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -7.1\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 132,\r\n        \"gust\": 17.8,\r\n        \"speed\":
+        12.5\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -17.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1006\r\n      },\r\n
+        \     \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\":
+        {\r\n        \"value\": 85,\r\n        \"high\": 34,\r\n        \"middle\":
+        75,\r\n        \"low\": 14,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\":
+        {\r\n        \"value\": 57.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\":
+        -14.6\r\n      },\r\n      \"start\": \"2021-01-21T18:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T19:00:00+01:00\"\r\n    }\r\n  ],\r\n  \"longIntervals\": [\r\n
+        \   {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        1,\r\n        \"clouds\": 0,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"clearsky_night\",\r\n        \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\":
+        \"clearsky_night\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.1,\r\n        \"min\": -5.8,\r\n        \"max\": -5.4\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 119,\r\n        \"gust\":
+        4.4,\r\n        \"speed\": 3.2\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -10.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 0,\r\n        \"high\":
+        0,\r\n        \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 59.6\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -12.2\r\n      },\r\n      \"start\":
+        \"2021-01-19T17:00:00+01:00\",\r\n      \"end\": \"2021-01-19T18:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        1,\r\n        \"clouds\": 0,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"clearsky_night\",\r\n        \"next6Hours\": \"clearsky_night\",\r\n        \"next12Hours\":
+        \"clearsky_night\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.4,\r\n        \"min\": -5.8,\r\n        \"max\": -5.5\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 102,\r\n        \"gust\":
+        4.8,\r\n        \"speed\": 3.2\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -10.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1010\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 1,\r\n        \"high\":
+        0,\r\n        \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 59.6\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -12.4\r\n      },\r\n      \"start\":
+        \"2021-01-19T18:00:00+01:00\",\r\n      \"end\": \"2021-01-20T00:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        2,\r\n        \"clouds\": 1,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"clearsky_night\",\r\n        \"next6Hours\": \"fair_night\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.5,\r\n        \"min\": -6.4,\r\n        \"max\": -5.6\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 127,\r\n        \"gust\":
+        9.4,\r\n        \"speed\": 6.0\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1011\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 1,\r\n        \"high\":
+        2,\r\n        \"middle\": 0,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 58.8\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -12.6\r\n      },\r\n      \"start\":
+        \"2021-01-20T00:00:00+01:00\",\r\n      \"end\": \"2021-01-20T06:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Sun\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\": \"fair_night\",\r\n
+        \       \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -6.4,\r\n        \"min\": -6.6,\r\n        \"max\": -5.9\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 133,\r\n        \"gust\":
+        16.9,\r\n        \"speed\": 12.1\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -16.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1011\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 20,\r\n
+        \       \"high\": 1,\r\n        \"middle\": 18,\r\n        \"low\": 1,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        53.9\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.6\r\n
+        \     },\r\n      \"start\": \"2021-01-20T06:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-20T12:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -5.9,\r\n        \"min\": -6.3,\r\n        \"max\": -5.9\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 133,\r\n        \"gust\": 18.2,\r\n        \"speed\":
+        12.6\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -16.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1012\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 94,\r\n        \"high\": 46,\r\n
+        \       \"middle\": 88,\r\n        \"low\": 8,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 55.7\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -13.8\r\n      },\r\n      \"start\": \"2021-01-20T12:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-20T18:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n
+        \       \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.1,\r\n        \"min\": -7.1,\r\n        \"max\": -5.9\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 136,\r\n        \"gust\": 4.6,\r\n        \"speed\":
+        2.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -10.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1013\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 100,\r\n        \"high\": 58,\r\n
+        \       \"middle\": 98,\r\n        \"low\": 26,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 58.5\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -13.3\r\n      },\r\n      \"start\":
+        \"2021-01-20T18:00:00+01:00\",\r\n      \"end\": \"2021-01-21T00:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next1Hour\":
+        \"cloudy\",\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -7.1,\r\n        \"min\": -8.7,\r\n        \"max\": -7.2\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 126,\r\n        \"gust\":
+        13.3,\r\n        \"speed\": 6.4\r\n      },\r\n      \"feelsLike\": {\r\n
+        \       \"value\": -15.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\":
+        1012\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n
+        \       \"high\": 91,\r\n        \"middle\": 94,\r\n        \"low\": 10,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        56.9\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.6\r\n
+        \     },\r\n      \"start\": \"2021-01-21T00:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T06:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\": 2,\r\n
+        \       \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"partlycloudy_night\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 0,\r\n        \"probability\":
+        0\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -8.7,\r\n
+        \       \"min\": -8.3,\r\n        \"max\": -8.0\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 58,\r\n        \"gust\": 4.2,\r\n        \"speed\":
+        1.3\r\n      },\r\n      \"feelsLike\": {},\r\n      \"pressure\": {\r\n        \"value\":
+        1011\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\": 80,\r\n
+        \       \"high\": 67,\r\n        \"middle\": 41,\r\n        \"low\": 1,\r\n
+        \       \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        64.8\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -14.6\r\n
+        \     },\r\n      \"start\": \"2021-01-21T06:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-21T12:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\": 2,\r\n
+        \       \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next1Hour\": \"partlycloudy_day\",\r\n        \"next6Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        0,\r\n        \"probability\": 0\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -8.1,\r\n        \"min\": -7.9,\r\n        \"max\": -6.9\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 112,\r\n        \"gust\":
+        7.0,\r\n        \"speed\": 4.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -15.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1009\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 38,\r\n        \"high\":
+        1,\r\n        \"middle\": 36,\r\n        \"low\": 1,\r\n        \"fog\": 0\r\n
+        \     },\r\n      \"humidity\": {\r\n        \"value\": 65.2\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -13.9\r\n      },\r\n      \"start\":
+        \"2021-01-21T12:00:00+01:00\",\r\n      \"end\": \"2021-01-21T18:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 18,\r\n        \"probability\":
+        18\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -7.2,\r\n
+        \       \"min\": -5.4,\r\n        \"max\": -3.8\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 138,\r\n        \"gust\": 20.8,\r\n        \"speed\":
+        15.5\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -18.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1005\r\n      },\r\n
+        \     \"uvIndex\": {\r\n        \"value\": 0.0\r\n      },\r\n      \"cloudCover\":
+        {\r\n        \"value\": 94,\r\n        \"high\": 63,\r\n        \"middle\":
+        83,\r\n        \"low\": 10,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\":
+        {\r\n        \"value\": 55.6\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\":
+        -15.0\r\n      },\r\n      \"start\": \"2021-01-21T19:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-22T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 22,\r\n        \"probability\": 22\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -4.1,\r\n        \"min\": -4.4,\r\n
+        \       \"max\": -3.5\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        96,\r\n        \"speed\": 7.7\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1004\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n        \"high\":
+        97,\r\n        \"middle\": 100,\r\n        \"low\": 0,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 65.3\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -10.0\r\n      },\r\n      \"start\":
+        \"2021-01-22T01:00:00+01:00\",\r\n      \"end\": \"2021-01-22T07:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 26,\r\n        \"probability\":
+        26\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -4.0,\r\n
+        \       \"min\": -4.2,\r\n        \"max\": -3.8\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 87,\r\n        \"speed\": 8.8\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -12.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1001\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        100,\r\n        \"high\": 97,\r\n        \"middle\": 100,\r\n        \"low\":
+        0,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        62.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -10.5\r\n
+        \     },\r\n      \"start\": \"2021-01-22T07:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-22T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 10,\r\n        \"probability\": 10\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -4.1,\r\n        \"min\": -4.6,\r\n
+        \       \"max\": -4.0\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        104,\r\n        \"speed\": 7.8\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1000\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 100,\r\n        \"high\":
+        91,\r\n        \"middle\": 99,\r\n        \"low\": 0,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 61.4\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -10.8\r\n      },\r\n      \"start\":
+        \"2021-01-22T13:00:00+01:00\",\r\n      \"end\": \"2021-01-22T19:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 8,\r\n        \"probability\":
+        8\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -4.6,\r\n
+        \       \"min\": -5.2,\r\n        \"max\": -4.2\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 115,\r\n        \"speed\": 7.1\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -12.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 999\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        91,\r\n        \"high\": 50,\r\n        \"middle\": 41,\r\n        \"low\":
+        0,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        62.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -11.1\r\n
+        \     },\r\n      \"start\": \"2021-01-22T19:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-23T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 6,\r\n        \"probability\": 6\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -4.8,\r\n        \"min\": -6.0,\r\n
+        \       \"max\": -4.7\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        98,\r\n        \"speed\": 5.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 999\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 91,\r\n        \"high\": 16,\r\n
+        \       \"middle\": 85,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 65.3\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.7\r\n      },\r\n      \"start\": \"2021-01-23T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-23T07:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 8,\r\n        \"probability\": 8\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -5.6,\r\n        \"min\": -6.0,\r\n
+        \       \"max\": -4.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        107,\r\n        \"speed\": 5.1\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 998\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 87,\r\n        \"high\": 50,\r\n
+        \       \"middle\": 60,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 68.6\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.8\r\n      },\r\n      \"start\": \"2021-01-23T07:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-23T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\":
+        3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n      },\r\n
+        \     \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n
+        \       \"value\": 0.0,\r\n        \"pop\": 12,\r\n        \"probability\":
+        12\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.5,\r\n
+        \       \"min\": -6.5,\r\n        \"max\": -5.1\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 95,\r\n        \"speed\": 4.6\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -12.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 998\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        97,\r\n        \"high\": 63,\r\n        \"middle\": 94,\r\n        \"low\":
+        0,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        69.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -10.6\r\n
+        \     },\r\n      \"start\": \"2021-01-23T13:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-23T19:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\": 2,\r\n
+        \       \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n        \"next12Hours\":
+        \"partlycloudy_night\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        12,\r\n        \"probability\": 12\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.8,\r\n        \"min\": -6.4,\r\n        \"max\": -5.3\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 124,\r\n        \"speed\":
+        4.7\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -12.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 997\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 91,\r\n        \"high\": 56,\r\n
+        \       \"middle\": 59,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 68.8\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -11.0\r\n      },\r\n      \"start\": \"2021-01-23T19:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-24T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n
+        \       \"next12Hours\": \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 10,\r\n        \"probability\": 10\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -5.9,\r\n        \"min\": -6.2,\r\n
+        \       \"max\": -5.3\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        120,\r\n        \"speed\": 4.1\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 997\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 81,\r\n        \"high\": 32,\r\n
+        \       \"middle\": 57,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 69.9\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.9\r\n      },\r\n      \"start\": \"2021-01-24T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-24T07:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        8,\r\n        \"probability\": 8\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.8,\r\n        \"min\": -6.4,\r\n        \"max\": -5.4\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 134,\r\n        \"speed\":
+        4.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -12.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 998\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 89,\r\n        \"high\": 38,\r\n
+        \       \"middle\": 65,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 72.2\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.4\r\n      },\r\n      \"start\": \"2021-01-24T07:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-24T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        10,\r\n        \"probability\": 10\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -6.1,\r\n        \"min\": -6.8,\r\n        \"max\": -5.9\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 133,\r\n        \"speed\":
+        4.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -12.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 997\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 74,\r\n        \"high\": 19,\r\n
+        \       \"middle\": 47,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 73.3\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.4\r\n      },\r\n      \"start\": \"2021-01-24T13:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-24T19:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n
+        \       \"next12Hours\": \"partlycloudy_night\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 8,\r\n        \"probability\": 8\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.3,\r\n        \"min\": -6.5,\r\n
+        \       \"max\": -5.7\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        124,\r\n        \"speed\": 4.2\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 997\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 78,\r\n        \"high\": 26,\r\n
+        \       \"middle\": 51,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 74.1\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.5\r\n      },\r\n      \"start\": \"2021-01-24T19:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-25T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n
+        \       \"next12Hours\": \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 6,\r\n        \"probability\": 6\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.4,\r\n        \"min\": -6.5,\r\n
+        \       \"max\": -5.5\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        142,\r\n        \"speed\": 3.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 998\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 81,\r\n        \"high\": 20,\r\n
+        \       \"middle\": 54,\r\n        \"low\": 0,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 75.2\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -10.5\r\n      },\r\n      \"start\": \"2021-01-25T01:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-25T07:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        8,\r\n        \"probability\": 8\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.9,\r\n        \"min\": -6.2,\r\n        \"max\": -5.5\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 149,\r\n        \"speed\":
+        3.4\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -11.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 999\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 73,\r\n        \"high\": 34,\r\n
+        \       \"middle\": 39,\r\n        \"low\": 4,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 77.1\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -9.6\r\n      },\r\n      \"start\": \"2021-01-25T07:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-25T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Sun\"\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"partlycloudy_day\",\r\n        \"next12Hours\":
+        \"partlycloudy_day\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\":
+        0.0,\r\n        \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\":
+        8,\r\n        \"probability\": 8\r\n      },\r\n      \"temperature\": {\r\n
+        \       \"value\": -5.8,\r\n        \"min\": -6.8,\r\n        \"max\": -5.8\r\n
+        \     },\r\n      \"wind\": {\r\n        \"direction\": 126,\r\n        \"speed\":
+        3.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\": -11.0\r\n
+        \     },\r\n      \"pressure\": {\r\n        \"value\": 1001\r\n      },\r\n
+        \     \"cloudCover\": {\r\n        \"value\": 77,\r\n        \"high\": 15,\r\n
+        \       \"middle\": 35,\r\n        \"low\": 6,\r\n        \"fog\": 0\r\n      },\r\n
+        \     \"humidity\": {\r\n        \"value\": 76.5\r\n      },\r\n      \"dewPoint\":
+        {\r\n        \"value\": -9.6\r\n      },\r\n      \"start\": \"2021-01-25T13:00:00+01:00\",\r\n
+        \     \"end\": \"2021-01-25T19:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\":
+        {\r\n        \"sunup\": false,\r\n        \"n\": 3,\r\n        \"clouds\":
+        2,\r\n        \"precip\": 0,\r\n        \"var\": \"Moon\"\r\n      },\r\n
+        \     \"symbolCode\": {\r\n        \"next6Hours\": \"partlycloudy_night\",\r\n
+        \       \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 12,\r\n        \"probability\": 12\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.5,\r\n        \"min\": -6.7,\r\n
+        \       \"max\": -5.9\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        134,\r\n        \"speed\": 3.5\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -12.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1002\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 73,\r\n        \"high\":
+        27,\r\n        \"middle\": 43,\r\n        \"low\": 9,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 77.0\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -10.2\r\n      },\r\n      \"start\":
+        \"2021-01-25T19:00:00+01:00\",\r\n      \"end\": \"2021-01-26T01:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 6,\r\n        \"probability\":
+        6\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.4,\r\n
+        \       \"min\": -6.5,\r\n        \"max\": -5.7\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 125,\r\n        \"speed\": 2.8\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1004\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        85,\r\n        \"high\": 9,\r\n        \"middle\": 45,\r\n        \"low\":
+        19,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        77.7\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -10.0\r\n
+        \     },\r\n      \"start\": \"2021-01-26T01:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-26T07:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 8,\r\n        \"probability\": 8\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.2,\r\n        \"min\": -6.2,\r\n
+        \       \"max\": -5.5\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        135,\r\n        \"speed\": 3.1\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1005\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 88,\r\n        \"high\":
+        4,\r\n        \"middle\": 63,\r\n        \"low\": 18,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 77.4\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -9.8\r\n      },\r\n      \"start\":
+        \"2021-01-26T07:00:00+01:00\",\r\n      \"end\": \"2021-01-26T13:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 12,\r\n        \"probability\":
+        12\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.6,\r\n
+        \       \"min\": -6.0,\r\n        \"max\": -5.2\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 115,\r\n        \"speed\": 3.4\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1006\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        91,\r\n        \"high\": 20,\r\n        \"middle\": 77,\r\n        \"low\":
+        12,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        77.7\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -9.2\r\n      },\r\n
+        \     \"start\": \"2021-01-26T13:00:00+01:00\",\r\n      \"end\": \"2021-01-26T19:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 12,\r\n        \"probability\":
+        12\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.5,\r\n
+        \       \"min\": -6.6,\r\n        \"max\": -5.1\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 131,\r\n        \"speed\": 3.6\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1004\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        93,\r\n        \"high\": 17,\r\n        \"middle\": 60,\r\n        \"low\":
+        26,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        78.0\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -9.1\r\n      },\r\n
+        \     \"start\": \"2021-01-26T19:00:00+01:00\",\r\n      \"end\": \"2021-01-27T01:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Moon\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"partlycloudy_night\",\r\n        \"next12Hours\": \"partlycloudy_day\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 10,\r\n        \"probability\":
+        10\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.6,\r\n
+        \       \"min\": -6.1,\r\n        \"max\": -4.8\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 145,\r\n        \"speed\": 3.0\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -10.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1005\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        86,\r\n        \"high\": 21,\r\n        \"middle\": 45,\r\n        \"low\":
+        21,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        77.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -9.3\r\n      },\r\n
+        \     \"start\": \"2021-01-27T01:00:00+01:00\",\r\n      \"end\": \"2021-01-27T07:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        3,\r\n        \"clouds\": 2,\r\n        \"precip\": 0,\r\n        \"var\":
+        \"Sun\"\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"partlycloudy_day\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n
+        \     \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n
+        \       \"value\": 0.0,\r\n        \"pop\": 12,\r\n        \"probability\":
+        12\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -5.9,\r\n
+        \       \"min\": -6.3,\r\n        \"max\": -5.4\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 106,\r\n        \"speed\": 3.2\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1004\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        83,\r\n        \"high\": 15,\r\n        \"middle\": 31,\r\n        \"low\":
+        18,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        77.2\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -9.6\r\n      },\r\n
+        \     \"start\": \"2021-01-27T07:00:00+01:00\",\r\n      \"end\": \"2021-01-27T13:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 10,\r\n        \"probability\":
+        10\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.0,\r\n
+        \       \"min\": -7.3,\r\n        \"max\": -6.0\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 131,\r\n        \"speed\": 3.2\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1004\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        84,\r\n        \"high\": 6,\r\n        \"middle\": 14,\r\n        \"low\":
+        18,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        76.7\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -9.8\r\n      },\r\n
+        \     \"start\": \"2021-01-27T13:00:00+01:00\",\r\n      \"end\": \"2021-01-27T19:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 8,\r\n        \"probability\":
+        8\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -6.9,\r\n
+        \       \"min\": -7.3,\r\n        \"max\": -6.1\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 115,\r\n        \"speed\": 3.4\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -12.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1006\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        89,\r\n        \"high\": 22,\r\n        \"middle\": 25,\r\n        \"low\":
+        17,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        76.1\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -10.7\r\n
+        \     },\r\n      \"start\": \"2021-01-27T19:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-28T01:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n      },\r\n      \"precipitation\":
+        {\r\n        \"min\": 0.0,\r\n        \"max\": 0.0,\r\n        \"value\":
+        0.0,\r\n        \"pop\": 6,\r\n        \"probability\": 6\r\n      },\r\n
+        \     \"temperature\": {\r\n        \"value\": -6.7,\r\n        \"min\": -8.0,\r\n
+        \       \"max\": -6.4\r\n      },\r\n      \"wind\": {\r\n        \"direction\":
+        127,\r\n        \"speed\": 2.3\r\n      },\r\n      \"feelsLike\": {\r\n        \"value\":
+        -11.0\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 1005\r\n
+        \     },\r\n      \"cloudCover\": {\r\n        \"value\": 89,\r\n        \"high\":
+        44,\r\n        \"middle\": 51,\r\n        \"low\": 18,\r\n        \"fog\":
+        0\r\n      },\r\n      \"humidity\": {\r\n        \"value\": 76.3\r\n      },\r\n
+        \     \"dewPoint\": {\r\n        \"value\": -10.5\r\n      },\r\n      \"start\":
+        \"2021-01-28T01:00:00+01:00\",\r\n      \"end\": \"2021-01-28T07:00:00+01:00\"\r\n
+        \   },\r\n    {\r\n      \"symbol\": {\r\n        \"sunup\": false,\r\n        \"n\":
+        4,\r\n        \"clouds\": 3,\r\n        \"precip\": 0\r\n      },\r\n      \"symbolCode\":
+        {\r\n        \"next6Hours\": \"cloudy\",\r\n        \"next12Hours\": \"cloudy\"\r\n
+        \     },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n        \"max\":
+        0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 12,\r\n        \"probability\":
+        12\r\n      },\r\n      \"temperature\": {\r\n        \"value\": -7.2,\r\n
+        \       \"min\": -7.2,\r\n        \"max\": -6.4\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 129,\r\n        \"speed\": 2.4\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1007\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        91,\r\n        \"high\": 62,\r\n        \"middle\": 56,\r\n        \"low\":
+        35,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        75.1\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -11.3\r\n
+        \     },\r\n      \"start\": \"2021-01-28T07:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-28T13:00:00+01:00\"\r\n    },\r\n    {\r\n      \"symbol\": {\r\n
+        \       \"sunup\": false,\r\n        \"n\": 4,\r\n        \"clouds\": 3,\r\n
+        \       \"precip\": 0\r\n      },\r\n      \"symbolCode\": {\r\n        \"next6Hours\":
+        \"cloudy\"\r\n      },\r\n      \"precipitation\": {\r\n        \"min\": 0.0,\r\n
+        \       \"max\": 0.0,\r\n        \"value\": 0.0,\r\n        \"pop\": 12,\r\n
+        \       \"probability\": 12\r\n      },\r\n      \"temperature\": {\r\n        \"value\":
+        -6.5,\r\n        \"min\": -7.5,\r\n        \"max\": -6.5\r\n      },\r\n      \"wind\":
+        {\r\n        \"direction\": 124,\r\n        \"speed\": 2.6\r\n      },\r\n
+        \     \"feelsLike\": {\r\n        \"value\": -11.0\r\n      },\r\n      \"pressure\":
+        {\r\n        \"value\": 1007\r\n      },\r\n      \"cloudCover\": {\r\n        \"value\":
+        94,\r\n        \"high\": 49,\r\n        \"middle\": 79,\r\n        \"low\":
+        30,\r\n        \"fog\": 0\r\n      },\r\n      \"humidity\": {\r\n        \"value\":
+        74.6\r\n      },\r\n      \"dewPoint\": {\r\n        \"value\": -10.6\r\n
+        \     },\r\n      \"start\": \"2021-01-28T13:00:00+01:00\",\r\n      \"end\":
+        \"2021-01-28T19:00:00+01:00\"\r\n    }\r\n  ],\r\n  \"_links\": {\r\n    \"self\":
+        {\r\n      \"href\": \"/api/v0/locations/1-305409/forecast\"\r\n    }\r\n
+        \ }\r\n}"
+  recorded_at: Tue, 19 Jan 2021 15:24:20 GMT
+- request:
+    method: get
+    uri: https://www.yr.no/api/v0/locations/1-305409/nearestwatertemperatures
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.yr.no
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=865
+      Expires:
+      - Tue, 19 Jan 2021 15:38:45 GMT
+      Date:
+      - Tue, 19 Jan 2021 15:24:20 GMT
+      Content-Length:
+      - '1222'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJfZW1iZWRkZWQiOnsibmVhcmVzdExvY2F0aW9ucyI6W3sibG9jYXRpb24iOnsiY2F0ZWdvcnkiOnsiaWQiOiJDSzExIiwibmFtZSI6IkJ5Z2QifSwiaWQiOiIxLTMwNDk5MCIsIm5hbWUiOiJCcmVuc2hvbG1lbiIsInBvc2l0aW9uIjp7ImxhdCI6NjkuNTk5MTYsImxvbiI6MTguMDQwMjIsImxhdExvbiI6e319LCJlbGV2YXRpb24iOjExLCJ0aW1lWm9uZSI6IkV1cm9wZS9Pc2xvIiwidXJsUGF0aCI6Ik5vcmdlL1Ryb21zIG9nIEZpbm5tYXJrL1Ryb21zw7gvQnJlbnNob2xtZW4iLCJjb3VudHJ5Ijp7ImlkIjoiTk8iLCJuYW1lIjoiTm9yZ2UifSwicmVnaW9uIjp7ImlkIjoiTk8vNTQiLCJuYW1lIjoiVHJvbXMgb2cgRmlubm1hcmsifSwic3VicmVnaW9uIjp7ImlkIjoiTk8vNTQvNTQwMSIsIm5hbWUiOiJUcm9tc8O4In0sImVsZXZhdGlvbklzRGVmaW5lZCI6dHJ1ZSwiaXNJbk5vcndheSI6dHJ1ZSwiaXNSZWdpb24iOmZhbHNlfSwidGVtcGVyYXR1cmUiOjIsInRpbWUiOiIyMDIxLTAxLTE4VDEyOjAwOjAwKzAxOjAwIiwic291cmNlIjozLCJkaXN0YW5jZUZyb21Mb2NhdGlvbiI6MzYzMzJ9LHsibG9jYXRpb24iOnsiY2F0ZWdvcnkiOnsiaWQiOiJFSjAxIiwibmFtZSI6IktpcmtlIn0sImlkIjoiMS0zMDUwMTciLCJuYW1lIjoiSGlsbGVzw7h5IiwicG9zaXRpb24iOnsibGF0Ijo2OS41OTgxMiwibG9uIjoxOC4wMzE3MSwibGF0TG9uIjp7fX0sImVsZXZhdGlvbiI6NywidGltZVpvbmUiOiJFdXJvcGUvT3NsbyIsInVybFBhdGgiOiJOb3JnZS9Ucm9tcyBvZyBGaW5ubWFyay9Ucm9tc8O4L0hpbGxlc8O4eSIsImNvdW50cnkiOnsiaWQiOiJOTyIsIm5hbWUiOiJOb3JnZSJ9LCJyZWdpb24iOnsiaWQiOiJOTy81NCIsIm5hbWUiOiJUcm9tcyBvZyBGaW5ubWFyayJ9LCJzdWJyZWdpb24iOnsiaWQiOiJOTy81NC81NDAxIiwibmFtZSI6IlRyb21zw7gifSwiZWxldmF0aW9uSXNEZWZpbmVkIjp0cnVlLCJpc0luTm9yd2F5Ijp0cnVlLCJpc1JlZ2lvbiI6ZmFsc2V9LCJ0ZW1wZXJhdHVyZSI6MywidGltZSI6IjIwMjEtMDEtMTZUMTY6MDc6MDArMDE6MDAiLCJzb3VyY2UiOjMsImRpc3RhbmNlRnJvbUxvY2F0aW9uIjozNjY3OX1dfSwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Ii9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5L25lYXJlc3R3YXRlcnRlbXBlcmF0dXJlcyJ9LCJwYXJlbnQiOnsiaHJlZiI6Ii9hcGkvdjAvbG9jYXRpb25zLzEtMzA1NDA5In19fQ==
+  recorded_at: Tue, 19 Jan 2021 15:24:20 GMT
+recorded_with: VCR 6.0.0

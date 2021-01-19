@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.yr.no/api/v0/locations/search?accuracy=1000&language=en&lat&lon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.yr.no
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=86401
+      Expires:
+      - Wed, 20 Jan 2021 15:24:21 GMT
+      Date:
+      - Tue, 19 Jan 2021 15:24:20 GMT
+      Content-Length:
+      - '291'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=86400
+    body:
+      encoding: UTF-8
+      string: "{\r\n  \"totalResults\": 0,\r\n  \"_links\": {\r\n    \"self\": {\r\n
+        \     \"href\": \"/api/v0/locations\"\r\n    },\r\n    \"page\": {\r\n      \"href\":
+        \"/api/v0/locations{?page}\",\r\n      \"templated\": true\r\n    },\r\n    \"search\":
+        {\r\n      \"href\": \"/api/v0/locations/search{?q}\",\r\n      \"templated\":
+        true\r\n    }\r\n  }\r\n}"
+  recorded_at: Tue, 19 Jan 2021 15:24:20 GMT
+recorded_with: VCR 6.0.0
