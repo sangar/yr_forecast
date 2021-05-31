@@ -20,11 +20,13 @@ module YrForecast
 
       response = intervals[0]
       response["location"] = location
-      response["watertemperature"] = watertemperature_for(location)
+      response["watertemperature"] = watertemperature_for(location, options)
       response
     end
 
-    def watertemperature_for(location)
+    def watertemperature_for(location, options)
+      options = { order_by: "dist" }.merge(options)
+
       res = get_watertemperatures(location)
       return unless res.is_a?(Net::HTTPSuccess)
 
@@ -33,10 +35,14 @@ module YrForecast
 
       return [] if datas.count == 0
 
-      datas.each {|data| data["sorttime"] = Time.parse(data["time"]).to_datetime }
-      datas.sort! {|a, b| b["sorttime"] <=> a["sorttime"] }
+      if options[:order_by].eql?("time")
+        datas.each {|data| data["sorttime"] = Time.parse(data["time"]).to_datetime }
+        datas.sort! {|a, b| b["sorttime"] <=> a["sorttime"] }
+        datas[0].delete("sorttime")
+      else
+        datas.sort! {|a, b| a["distanceFromLocation"] <=> b["distanceFromLocation"] }
+      end
       watertemperature = datas[0]
-      watertemperature.delete("sorttime")
       watertemperature
     end
 
