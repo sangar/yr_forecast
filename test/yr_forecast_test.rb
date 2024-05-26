@@ -21,21 +21,21 @@ class YrForecastTest < Minitest::Test
   def test_get_data_by_search
     VCR.use_cassette("test_get_data_by_search") do
       forecast = YrForecast.for(place: "Bud")
-      assert_equal 15, forecast.count
+      assert_equal 16, forecast.count
     end
   end
 
   def test_get_data_by_coords
     VCR.use_cassette("test_get_data_by_coords") do
       forecast = YrForecast.for(latitude: 59.9128627, longitude: 10.7434443)
-      assert_equal 15, forecast.count
+      assert_equal 16, forecast.count
     end
   end
 
   def test_get_data_by_other_coords
     VCR.use_cassette("test_get_data_by_other_coords") do
       forecast = YrForecast.for(latitude: 69.648405, longitude: 18.959708)
-      assert_equal 15, forecast.count
+      assert_equal 16, forecast.count
     end
   end
 end

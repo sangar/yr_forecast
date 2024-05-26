@@ -17,31 +17,29 @@ http_interactions:
       - www.yr.no
   response:
     status:
-      code: 200
-      message: OK
+      code: 403
+      message: Forbidden
     headers:
+      Server:
+      - AkamaiGHost
+      Mime-Version:
+      - '1.0'
       Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept-Encoding
-      Cache-Control:
-      - public, max-age=86401
-      Expires:
-      - Wed, 20 Jan 2021 15:24:21 GMT
-      Date:
-      - Tue, 19 Jan 2021 15:24:20 GMT
+      - text/html
       Content-Length:
-      - '291'
+      - '403'
+      Expires:
+      - Sun, 26 May 2024 09:08:31 GMT
+      Date:
+      - Sun, 26 May 2024 09:08:31 GMT
       Connection:
-      - keep-alive
+      - close
       Strict-Transport-Security:
       - max-age=86400
     body:
       encoding: UTF-8
-      string: "{\r\n  \"totalResults\": 0,\r\n  \"_links\": {\r\n    \"self\": {\r\n
-        \     \"href\": \"/api/v0/locations\"\r\n    },\r\n    \"page\": {\r\n      \"href\":
-        \"/api/v0/locations{?page}\",\r\n      \"templated\": true\r\n    },\r\n    \"search\":
-        {\r\n      \"href\": \"/api/v0/locations/search{?q}\",\r\n      \"templated\":
-        true\r\n    }\r\n  }\r\n}"
-  recorded_at: Tue, 19 Jan 2021 15:24:20 GMT
+      string: "<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access
+        Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;yr&#46;no&#47;api&#47;v0&#47;locations&#47;search&#63;\"
+        on this server.<P>\nReference&#32;&#35;18&#46;14aad4c1&#46;1716714511&#46;32ed4065\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;14aad4c1&#46;1716714511&#46;32ed4065</P>\n</BODY>\n</HTML>\n"
+  recorded_at: Sun, 26 May 2024 09:08:31 GMT
 recorded_with: VCR 6.0.0
