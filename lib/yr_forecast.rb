@@ -3,6 +3,7 @@ require "yr_forecast/version"
 require "net/http"
 require "json"
 require "time"
+require "resolv-replace"
 
 module YrForecast
   extend Configuration
