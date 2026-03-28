@@ -5,11 +5,11 @@ require "yr_forecast/version"
 Gem::Specification.new do |spec|
   spec.name          = "yr_forecast"
   spec.version       = YrForecast::VERSION
-  spec.authors       = ["Gard Sandholt"]
-  spec.email         = ["gard.sandholt@gmail.com"]
+  spec.authors       = [ "Gard Sandholt" ]
+  spec.email         = [ "gard.sandholt@gmail.com" ]
 
-  spec.summary       = %q{yr.no API wrapper in Ruby}
-  spec.description   = %q{yr.no API wrapper in Ruby}
+  spec.summary       = %q(yr.no API wrapper in Ruby)
+  spec.description   = %q(yr.no API wrapper in Ruby)
   spec.homepage      = "https://github.com/sangar/yr-forecast"
   spec.license       = "MIT"
 
@@ -24,7 +24,9 @@ Gem::Specification.new do |spec|
   end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = [ "lib" ]
+
+  spec.add_dependency "resolv-replace"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.3.3"
