@@ -38,11 +38,11 @@ module YrForecast
       return [] if datas.count == 0
 
       if options[:order_by].eql?("time")
-        datas.each {|data| data["sorttime"] = Time.parse(data["time"]).to_datetime }
-        datas.sort! {|a, b| b["sorttime"] <=> a["sorttime"] }
+        datas.each { |data| data["sorttime"] = Time.parse(data["time"]).to_datetime }
+        datas.sort! { |a, b| b["sorttime"] <=> a["sorttime"] }
         datas[0].delete("sorttime")
       else
-        datas.sort! {|a, b| a["distanceFromLocation"] <=> b["distanceFromLocation"] }
+        datas.sort! { |a, b| a["distanceFromLocation"] <=> b["distanceFromLocation"] }
       end
       watertemperature = datas[0]
       watertemperature
