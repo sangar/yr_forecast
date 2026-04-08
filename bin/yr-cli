@@ -1,0 +1,288 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path("../lib", __dir__) unless $LOAD_PATH.include?(File.expand_path("../lib", __dir__))
+
+require "optparse"
+require "json"
+require "yr_forecast"
+
+class YrForecastCLI
+  VERSION = YrForecast::VERSION
+
+  def self.run
+    new.run
+  end
+
+  def run
+    options = parse_options
+
+    if options[:version]
+      puts "yr-cli #{VERSION}"
+      exit 0
+    end
+
+    if options[:help] || (!options[:place] && (!options[:latitude] || !options[:longitude]))
+      puts help_text
+      exit options[:help] ? 0 : 1
+    end
+
+    begin
+      forecast = fetch_forecast(options)
+      display_forecast(forecast, options)
+    rescue => e
+      puts "Error: #{e.message}"
+      exit 1
+    end
+  end
+
+  private
+
+  def parse_options
+    options = {
+      format: "table",
+      days: 1
+    }
+
+    OptionParser.new do |opts|
+      opts.banner = "Usage: yr-cli [options]"
+      opts.separator ""
+      opts.separator "Options:"
+
+      opts.on("-p", "--place PLACE", "Location name (e.g., 'Oslo', 'Copenhagen')") do |place|
+        options[:place] = place
+      end
+
+      opts.on("--lat LATITUDE", Float, "Latitude coordinate") do |lat|
+        options[:latitude] = lat
+      end
+
+      opts.on("--lon LONGITUDE", Float, "Longitude coordinate") do |lon|
+        options[:longitude] = lon
+      end
+
+      opts.on("-f", "--format FORMAT", %w[table json pretty], "Output format: table, json, pretty (default: table)") do |format|
+        options[:format] = format
+      end
+
+      opts.on("-d", "--days DAYS", Integer, "Number of forecast days to show (default: 1)") do |days|
+        options[:days] = days
+      end
+
+      opts.on("-w", "--water-temp", "Include water temperature") do
+        options[:water_temp] = true
+      end
+
+      opts.on("--pollen", "Include pollen data") do
+        options[:pollen] = true
+      end
+
+      opts.on("-h", "--help", "Show this help message") do
+        options[:help] = true
+      end
+
+      opts.on("-v", "--version", "Show version") do
+        options[:version] = true
+      end
+    end.parse!
+
+    options
+  end
+
+  def help_text
+    <<~HELP
+      yr-cli - Weather forecast from yr.no
+
+      Usage:
+        yr-cli --place "Oslo"
+        yr-cli --lat 59.9128627 --lon 10.7434443
+        yr-cli -p Copenhagen -f json
+        yr-cli -p "New York" -d 3 -w --pollen
+
+      Options:
+        -p, --place PLACE          Location name (e.g., 'Oslo', 'Copenhagen')
+            --lat LATITUDE         Latitude coordinate
+            --lon LONGITUDE        Longitude coordinate
+        -f, --format FORMAT        Output format: table, json, pretty (default: table)
+        -d, --days DAYS            Number of forecast days to show (default: 1)
+        -w, --water-temp           Include water temperature
+            --pollen               Include pollen data
+        -h, --help                 Show this help message
+        -v, --version              Show version
+
+      Examples:
+        yr-cli --place "Bergen"                    # Basic forecast for Bergen
+        yr-cli -p London -f json                   # JSON output for London
+        yr-cli --lat 59.91 --lon 10.74 -d 3        # 3-day forecast for coordinates
+        yr-cli -p Oslo -w --pollen                 # Include water temp and pollen
+
+    HELP
+  end
+
+  def fetch_forecast(options)
+    if options[:place]
+      YrForecast.for(place: options[:place])
+    else
+      YrForecast.for(latitude: options[:latitude], longitude: options[:longitude])
+    end
+  end
+
+  def display_forecast(forecast, options)
+    if forecast.nil? || forecast.empty?
+      puts "No forecast data available for the specified location."
+      exit 1
+    end
+
+    case options[:format]
+    when "json"
+      puts forecast.to_json
+    when "pretty"
+      puts JSON.pretty_generate(forecast)
+    else
+      display_table(forecast, options)
+    end
+  end
+
+  def display_table(forecast, options)
+    location = forecast["location"]
+
+    # Header
+    puts "=" * 60
+    if location
+      puts "  Weather Forecast for #{location['name'] || 'Unknown Location'}"
+      puts "  Country: #{format_location_field(location['country'])} | Region: #{format_location_field(location['region'])}"
+      puts "  Coordinates: #{location['latitude'] || 'N/A'}, #{location['longitude'] || 'N/A'}"
+    else
+      puts "  Weather Forecast"
+    end
+    puts "=" * 60
+    puts
+
+    # Current conditions
+    puts "  CURRENT CONDITIONS"
+    puts "  -" * 20
+    puts "  Temperature:     #{format_temperature(forecast['temperature'])}"
+    puts "  Feels Like:      #{format_temperature(forecast['feelsLike'])}"
+    puts "  Wind:            #{format_wind(forecast['wind'], nil)}"
+    puts "  Humidity:        #{format_percentage(forecast['humidity'])}"
+    puts "  Pressure:        #{format_pressure(forecast['pressure'])}"
+    puts "  Precipitation:   #{format_precipitation(forecast['precipitation'])}"
+    puts "  Cloud Cover:     #{format_percentage(forecast['cloudCover'])}"
+    puts "  Visibility:      #{format_distance(forecast['visibility'])}"
+    uv = forecast["uvIndex"]
+    puts "  UV Index:        #{uv.is_a?(Hash) ? uv['value'] : uv}"
+
+    # Weather symbol/description
+    if forecast["symbolCode"]
+      puts "  Condition:       #{format_symbol(forecast['symbolCode'])}"
+    end
+
+    puts
+
+    # Water temperature
+    if options[:water_temp] && forecast["watertemperature"]
+      wt = forecast["watertemperature"]
+      puts "  WATER TEMPERATURE"
+      puts "  -" * 20
+      if wt.is_a?(Hash)
+        puts "  Location:        #{wt['name'] || 'N/A'} (#{wt['distanceFromLocation']&.round(1)} km away)"
+        puts "  Water Temp:      #{format_temperature(wt['temperature'])}"
+        puts "  Measured at:     #{wt['time'] || 'N/A'}"
+      else
+        puts "  No water temperature data available."
+      end
+      puts
+    end
+
+    # Pollen data
+    if options[:pollen] && forecast["pollen"]
+      pollen_data = forecast["pollen"]
+      puts "  POLLEN FORECAST"
+      puts "  -" * 20
+      if pollen_data.is_a?(Array) && pollen_data.any?
+        pollen_data.each do |pollen|
+          puts "  #{pollen['name']}: #{pollen['amount']}"
+        end
+      else
+        puts "  No pollen data available."
+      end
+      puts
+    end
+
+    # Metadata
+    puts "  -" * 20
+    puts "  Forecast time:   #{forecast['start'] || 'N/A'}"
+    puts "  Data from:       yr.no (Norwegian Meteorological Institute)"
+    puts "=" * 60
+  end
+
+  # Formatting helpers - handle nested hash structures from yr.no API
+  def extract_value(data)
+    return nil if data.nil?
+    return data["value"] if data.is_a?(Hash) && data.key?("value")
+    data
+  end
+
+  def format_temperature(value)
+    val = extract_value(value)
+    return "N/A" if val.nil?
+    "#{val}°C"
+  end
+
+  def format_wind(wind_data, _direction)
+    return "N/A" if wind_data.nil?
+    # wind is a hash with direction, gust, speed
+    speed = wind_data["speed"] || wind_data
+    direction = wind_data["direction"]
+    return "N/A" if speed.nil?
+    dir = direction ? "#{direction}°" : ""
+    "#{speed} m/s #{dir}"
+  end
+
+  def format_percentage(value)
+    val = extract_value(value)
+    return "N/A" if val.nil?
+    "#{val}%"
+  end
+
+  def format_pressure(value)
+    val = extract_value(value)
+    return "N/A" if val.nil?
+    "#{val} hPa"
+  end
+
+  def format_precipitation(value)
+    return "N/A" if value.nil?
+    # precipitation is a hash with min, max, value, pop, probability
+    val = extract_value(value)
+    return "#{val} mm" unless val.nil?
+    # If nested hash without simple value
+    max = value["max"]
+    return "#{max} mm" unless max.nil?
+    "0 mm"
+  end
+
+  def format_distance(value)
+    val = extract_value(value)
+    return "N/A" if val.nil?
+    "#{val} km"
+  end
+
+  def format_location_field(field)
+    return "N/A" if field.nil?
+    return field["name"] if field.is_a?(Hash) && field.key?("name")
+    field.to_s
+  end
+
+  def format_symbol(symbol_code)
+    return "N/A" if symbol_code.nil?
+    # symbolCode is a hash like {"next1Hour" => "cloudy", ...}
+    if symbol_code.is_a?(Hash)
+      code = symbol_code["next1Hour"] || symbol_code["next6Hours"] || symbol_code["next12Hours"]
+      return "N/A" if code.nil?
+      return code.to_s.gsub("_", " ").capitalize
+    end
+    symbol_code.to_s.gsub("_", " ").capitalize
+  end
+end
+
+YrForecastCLI.run
